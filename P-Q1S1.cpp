@@ -2,12 +2,14 @@
 using namespace std;
 
 int main(){
-    char no;
-    if('a'||'e'||'i'||'o'||'u'||'A'||'E'||'I'||'O'||'U'){
-        cout<<no<<" is an Vowel Letter.";
+    char ch;
+    cout<<"Enter a Character: ";
+    cin>>ch;
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+        cout<<ch<<" is an Vowel Letter.";
     }
     else{
-        cout<<no<<" is a Consonant Letter.";
+        cout<<ch<<" is a Consonant Letter.";
     }
     return 0;
 }
