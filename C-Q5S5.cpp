@@ -1,14 +1,13 @@
 #include<iostream>
 using namespace std;
 
- 
-#define ap(x) (sizeof(x)/sizeof(x[0]))
+#define len(x) (sizeof(x)/sizeof(x[0]))
 
 int main(){
-    int arr[] ={66,57,54,53,64,52,59};
-    for (int i = 0; i < ap(arr); i++)
+    int arr[7] ={66,57,54,53,64,52,59};
+    for (int i = 0; i < len(arr); i++)
     {
-        for(int j = 0; j < ap(arr)-i-1; j++){
+        for(int j = 0; j < len(arr)-i-1; j++){
         	
 			if(arr[j]>arr[j+1]){
 				
@@ -19,8 +18,9 @@ int main(){
 			}
 		}
     }
+
     int max = 0;
-    for (int k = 0; k < ap(arr); k++){
+    for (int k = 0; k < len(arr); k++){
         if(max<arr[k]){
             max = arr[k];
         }
