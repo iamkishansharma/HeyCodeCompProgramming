@@ -1,18 +1,18 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int multiply (int a, int b) {
-	if (b == 0) {
-		return 0;
-	} else if (b > 0) {
-		return (a + multiply (a, b - 1));
-	} else {
-		return (-multiply (a, -b));
-	}
-}
 
-int main(){
-	int noOfPeopleInOneDay = 1200000;
-	int oneYearDays = 365;
-	cout<<"\nThe Bus System carries "<<multiply(noOfPeopleInOneDay,oneYearDays)<<" people in One Year.";
-	return 0;
+int main()
+{
+    int no, i;
+    int a = -1, b = 1, c;
+    cout << "Enter a Number: ";
+    cin >> no;
+    for (i = 0; i <= no; i++)
+    {
+        c = a + b;
+        cout << c << " ";
+        a = b;
+        b = c;
+    }
+    return 0;
 }
